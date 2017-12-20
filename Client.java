@@ -3,8 +3,8 @@ public class Client
 {
 	public static void main(String args[]) throws Exception
 	{
-		AddI obj = (AddI)Naming.lookup("ADD");
-		int sum = obj.add(6,4);
+		AddI obj = (AddI)Naming.lookup("rmi://localhost:5000/ADD");
+		int sum = obj.add(4,6);
 		System.out.println(sum);
 	}	
 }

@@ -1,7 +1,8 @@
+import java.rmi.*;
 import java.rmi.server.*;
 public class AddC extends UnicastRemoteObject implements AddI
 {
-	public AddC() throws Exception
+	public AddC() throws RemoteException
 	{
 		super();
 	}
